@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+}
+
+nav {
+    display: none;
+}
+
+.deroul {
+    display: flex;
+}
+
+#head {
+    width: 100%;
+}
+
+div {
+    width: 100%;
+    background-color: #acabab;
+    padding: 2em;
+}
+
+a {
+    padding: 1em;
+    font-size: 15px;
+    text-decoration-color: red;
+    color: black;
+}
+
+li {
+    text-align: center;
+    font-size: medium;
+}
+
+ul li {
+    display: none;
+}
+
+@media screen and (max-width: 800px){
+    a {
+        display: block;
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 400px){
+    a {
+        padding: 0.5em;
+        display: none;
+    }
+
+    nav {
+        display: initial;
+        font-size: xx-large;
+    }
+    .deroul:hover a {
+        display: block;
+    }
+
+    i {
+        animation-name: rotate;
+        animation-duration:2s;
+    }
+    i:hover {
+        transform: rotate(90deg);
+        color: red
+    }
+}
+
+.contact:hover li {
+    display: block;
+}
+
+.partenaires:hover li {
+    display: block;
+}
+
+.objectif:hover li {
+    display: block;
+}
+
+.Presentation:hover li {
+    display: block;
+}
+
+.Info:hover li {
+    display: block;
+}
+
+.Reglement:hover li {
+    display: block;
+}
+
+
